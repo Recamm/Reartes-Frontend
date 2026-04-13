@@ -1,0 +1,6 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--web-font-family);
+    color: var(--text-color-default);
+}

@@ -1,0 +1,9 @@
+.animacion {
+    background-color: red;
+    text-align: center;
+    transition: .3s;
+}
+
+.animacion:hover {
+    background-color: blue;
+}
