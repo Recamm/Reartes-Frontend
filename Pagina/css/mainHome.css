@@ -1,0 +1,95 @@
+.intro {
+    display: flex;
+    margin-top: var(--header-height);
+    padding: 70px 0;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 65%;
+        gap: 25px;
+        align-items: flex-start;
+        
+        .tag {
+            background-color: var(--color-dark-green-opacity);
+            padding: 8px 15px;
+            border-radius: 100px;
+
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--font-size-tiny-2);
+            color: var(--color-dark-green);
+        }
+
+        h1 {
+            font-size: var(--font-size-title);
+            font-weight: var(--font-weight-extrabold);
+            color: var(--color-grey);
+
+            .eternoTexto {
+                color: var(--color-dark-green);
+                font-weight: var(--font-weight-normal);
+                font-style: italic;
+            }
+        }
+
+        .descripcion {
+            width: 70%;
+        }
+        
+        .botones {
+            display: flex;
+            gap: 20px;
+            
+            a {
+                all: unset;
+                cursor: pointer;
+
+                color: var(--color-w);
+                padding: 15px 35px;
+
+                border-radius: 100px;
+
+                font-weight: var(--font-weight-semibold);
+            
+                transition: var(--short-transition);
+
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    opacity: .9;
+                }
+            }
+
+            .button1 {
+                background-color: var(--color-dark-green);
+                 
+            }
+
+            .button2 {
+                background-color: var(--color-grey);
+                gap: 6px;
+
+                svg {
+                    height: 85%;
+                }
+            }
+        }
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+
+        img {
+            border-radius: 20px;
+            height: 95%;
+            width: 80%;
+            transform: rotate(3deg);
+            object-fit: cover;
+        }
+    }
+}

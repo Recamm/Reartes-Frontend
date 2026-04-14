@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-w: #fdfefe;
+    --color-bk: #f8fafb;
+    --color-b: black;
+    --color-grey: rgb(26, 26, 26);
+    --color-dark-green: #006c5c;
+    --color-light-green: #0d9488;
+
+    --color-dark-green-opacity: #006c313e;
+    --color-light-green-opacity: #0d94896a;
+
+    --font-family: "Inter", sans-serif;
+    --font-family-text: "Open Sans", sans-serif;
+    --font-family-title: "Raleway", sans-serif;
+    --font-size-tiny: .9rem;
+    --font-size-tiny-2: .7rem;
+    --font-size: 1rem;
+    --font-size-semititle: 1.5rem;
+    --font-size-title: 4.5rem;
+    --font-weight-normal: 400; 
+    --font-weight-semibold: 600; 
+    --font-weight-bold: 800;
+    --font-weight-extrabold: 900;
+    
+    --header-height: 60px;
+    --width-page: 1200px;
+
+    --short-transition: .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-title);
+}
+
+main {
+    background-color: var(--color-bk);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    width: var(--width-page);
+}
