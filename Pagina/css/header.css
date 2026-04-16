@@ -15,6 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: var(--header-height);
+    padding: var(--header-padding);
 
     h1 {
         font-family: var(--font-family-title);
@@ -56,12 +57,16 @@ header {
         color: var(--color-w);
         font-weight: var(--font-weight-normal);
 
-        transition: var(--short-transition);
+        transition: var(--mini-transition);
 
         cursor: pointer;
 
         &:hover {
             background-color: var(--color-light-green);
+        }
+
+        &:active {
+            transform: scale(0.96);
         }
     }
 }

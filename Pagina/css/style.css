@@ -5,11 +5,18 @@
 
 :root {
     --color-w: #fdfefe;
-    --color-bk: #f8fafb;
+    --color-bk-1: #f8fafb;
+    --color-bk-2: #f0f4f6;
     --color-b: black;
-    --color-grey: rgb(26, 26, 26);
+    --color-grey: rgb(32, 32, 32);
+    --color-grey-2: rgb(57, 57, 57);
+    --color-muted: rgb(104, 104, 104);
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-shadow-lighter: rgba(0, 0, 0, 0.041);
     --color-dark-green: #006c5c;
+    --color-dark-green-contraste: #7df8dd;
     --color-light-green: #0d9488;
+    --color-light-green-2: #e3fff6;
 
     --color-dark-green-opacity: #006c313e;
     --color-light-green-opacity: #0d94896a;
@@ -21,16 +28,21 @@
     --font-size-tiny-2: .7rem;
     --font-size: 1rem;
     --font-size-semititle: 1.5rem;
+    --font-size-subtitle: 2.5rem;
     --font-size-title: 4.5rem;
     --font-weight-normal: 400; 
     --font-weight-semibold: 600; 
+    --font-weight-almost-bold: 700; 
     --font-weight-bold: 800;
     --font-weight-extrabold: 900;
     
-    --header-height: 60px;
-    --width-page: 1200px;
+    --header-raw-height: 40px;
+    --header-padding: 15px 20px;
+    --header-height: calc(var(--header-raw-height) + var(--header-padding) * 2);
+    --width-page: 1400px;
 
     --short-transition: .3s;
+    --mini-transition: .2s;
 }
 
 * {
@@ -40,8 +52,12 @@
     font-family: var(--font-family-title);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
-    background-color: var(--color-bk);
+    background-color: var(--color-bk-1);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,5 +65,40 @@ main {
 }
 
 .main {
-    width: var(--width-page);
+    /* width: var(--width-page); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hover-up-shadow {
+    transition: var(--short-transition);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px var(--color-shadow);
+    }
+}
+
+.hover-up-shadow-items {
+    transition: var(--short-transition);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px var(--color-shadow);
+    }
+}
+
+.active-chico {
+    transition: var(--mini-transition);
+
+    &:active {
+        transform: scale(0.96);
+    }
+}
+
+.aqui {
+    color: var(--color-dark-green) !important;
+    font-weight: var(--font-weight-bold) !important;
 }
