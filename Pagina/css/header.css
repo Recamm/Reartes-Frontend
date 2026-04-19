@@ -70,3 +70,45 @@ header {
         }
     }
 }
+
+/* RESPONSIVE */
+
+/* TABLET */
+@media (max-width: 1450px) {
+    .headerPC {
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+    .headerPC {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        
+        padding: 12px 20px;
+    }
+
+    .headerPC > a:first-child {
+        flex: 1;
+    }
+
+    .headerPC .menu {
+        order: 3;
+        
+        justify-content: center;
+        gap: 24px;
+        padding: 10px 0;
+        width: 100%;
+
+        border-top: 1px solid var(--color-bk-2);
+        margin-top: 10px;
+    }
+
+    .headerPC .unetenos {
+        padding: 8px 16px;
+        font-size: var(--font-size-tiny-2);
+    }
+}
